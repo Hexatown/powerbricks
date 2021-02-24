@@ -4,7 +4,7 @@
 ![](./images/JUMPTO%20PowerBricks.png)
 A collection of sample PowerBricks
 
--  [](src/devops)
+-  [devops](src/devops)
 ```powershell
 hexa run devops connect VirtualMachineName
 # Save the command as a dot Command
