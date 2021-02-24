@@ -159,7 +159,7 @@ full address:s:$($public.properties.ipAddress):3389
 prompt for credentials:i:0
 administrative session:i:1
 screen mode id:i:2
-use multimon:i:1
+use multimon:i:0
 desktopwidth:i:800
 desktopheight:i:600
 session bpp:i:32
@@ -238,8 +238,8 @@ if ($null -ne $vm) {
 
 write-host "Reading all machines you have access to in Azure"
 FindVM {
-    write-host $machine.name $machine.location -NoNewline
-    write-host " "  $public.properties.ipAddress -ForegroundColor Green
+    write-host $machine.name $machine.location 
+    # write-host " "  $public.properties.ipAddress -ForegroundColor Green
 
     if ($machine.name -eq $myVM) {
         
